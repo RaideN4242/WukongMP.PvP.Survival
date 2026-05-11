@@ -9,6 +9,6 @@ For start waiting spawn enemy in RED Team and press Ready (J keybutton). Somtime
 
 Sources files add may be later...
 
-For launch req WukongMp.Sdk 
+For launch req WukongMp.Sdk (without official PVP Mod!)
 
 https://youtu.be/qzGbfrLI-V8?feature=shared
