@@ -1,7 +1,7 @@
 # WukongMP.PvP.Survival
 Survival Mod for WukongMP SDK
 
-Wave system spawn. THIS IS DEMO!!!
+Wave spawn system. THIS IS DEMO!!!
 
 Open test: 87.224.213.71:9051
 
