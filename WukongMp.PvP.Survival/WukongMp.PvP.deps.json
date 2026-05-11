@@ -1,0 +1,833 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.1/",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.1": {},
+    ".NETStandard,Version=v2.1/": {
+      "WukongMp.PvP/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "10.0.7",
+          "0Harmony": "2.4.1.0",
+          "b1.Managed": "0.0.0.0",
+          "b1.Native": "0.0.0.0",
+          "b1.NativePlugins": "0.0.0.0",
+          "B1UI_GSE.Script": "1.0.0.0",
+          "BtlSvr.Main": "1.0.0.0",
+          "CSharpModBase": "0.0.6.0",
+          "CSharpModBaseV2": "0.7.479.1129",
+          "Google.Protobuf": "1.0.0.0",
+          "GSE.Core": "1.0.0.0",
+          "GSE.ProtobufDB": "1.0.0.0",
+          "LiteNetLib": "1.3.1.0",
+          "PreludeLib": "1.0.0.0",
+          "Protobuf.RunTime": "1.0.0.0",
+          "ReadyM.Api": "1.0.506.1101",
+          "ReadyM.Api.Multiplayer": "1.0.506.1101",
+          "ReadyM.Relay.Client": "1.0.506.1101",
+          "ReadyM.Wukong.Common": "1.0.506.1101",
+          "UnrealEngine": "0.0.0.0",
+          "UnrealEngine.Runtime": "1.0.0.0",
+          "WukongMp.Api": "0.0.0.0",
+          "WukongMp.Sdk": "1.0.506.1101"
+        },
+        "runtime": {
+          "WukongMp.PvP.dll": {}
+        },
+        "resources": {
+          "de/WukongMp.PvP.resources.dll": {
+            "locale": "de"
+          },
+          "es/WukongMp.PvP.resources.dll": {
+            "locale": "es"
+          },
+          "fr/WukongMp.PvP.resources.dll": {
+            "locale": "fr"
+          },
+          "pl/WukongMp.PvP.resources.dll": {
+            "locale": "pl"
+          },
+          "pt/WukongMp.PvP.resources.dll": {
+            "locale": "pt"
+          },
+          "zh-Hans/WukongMp.PvP.resources.dll": {
+            "locale": "zh-Hans"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/10.0.7": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.7"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.726.21808"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/10.0.7": {
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.726.21808"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging/10.0.7": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "10.0.7",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.7",
+          "Microsoft.Extensions.Options": "10.0.7",
+          "System.Diagnostics.DiagnosticSource": "10.0.7"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Extensions.Logging.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.726.21808"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/10.0.7": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.7",
+          "System.Diagnostics.DiagnosticSource": "10.0.7"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.726.21808"
+          }
+        }
+      },
+      "Microsoft.Extensions.Options/10.0.7": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.7",
+          "Microsoft.Extensions.Primitives": "10.0.7",
+          "System.ComponentModel.Annotations": "5.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Extensions.Options.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.726.21808"
+          }
+        }
+      },
+      "Microsoft.Extensions.Primitives/10.0.7": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.1.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.726.21808"
+          }
+        }
+      },
+      "System.ComponentModel.Annotations/5.0.0": {
+        "runtime": {
+          "lib/netstandard2.1/System.ComponentModel.Annotations.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
+        }
+      },
+      "System.Diagnostics.DiagnosticSource/10.0.7": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.1.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Diagnostics.DiagnosticSource.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.726.21808"
+          }
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/6.1.2": {
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.100.225.20307"
+          }
+        }
+      },
+      "0Harmony/2.4.1.0": {
+        "runtime": {
+          "0Harmony.dll": {
+            "assemblyVersion": "2.4.1.0",
+            "fileVersion": "2.4.1.0"
+          }
+        }
+      },
+      "b1.Managed/0.0.0.0": {
+        "runtime": {
+          "b1.Managed.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "b1.Native/0.0.0.0": {
+        "runtime": {
+          "b1.Native.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "b1.NativePlugins/0.0.0.0": {
+        "runtime": {
+          "b1.NativePlugins.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "B1UI_GSE.Script/1.0.0.0": {
+        "runtime": {
+          "B1UI_GSE.Script.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "BtlSvr.Main/1.0.0.0": {
+        "runtime": {
+          "BtlSvr.Main.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "CSharpModBase/0.0.6.0": {
+        "runtime": {
+          "CSharpModBase.dll": {
+            "assemblyVersion": "0.0.6.0",
+            "fileVersion": "0.7.478.1406"
+          }
+        }
+      },
+      "CSharpModBaseV2/0.7.479.1129": {
+        "runtime": {
+          "CSharpModBaseV2.dll": {
+            "assemblyVersion": "0.7.479.1129",
+            "fileVersion": "0.7.479.1129"
+          }
+        }
+      },
+      "Google.Protobuf/1.0.0.0": {
+        "runtime": {
+          "Google.Protobuf.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "GSE.Core/1.0.0.0": {
+        "runtime": {
+          "GSE.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "GSE.ProtobufDB/1.0.0.0": {
+        "runtime": {
+          "GSE.ProtobufDB.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "LiteNetLib/1.3.1.0": {
+        "runtime": {
+          "LiteNetLib.dll": {
+            "assemblyVersion": "1.3.1.0",
+            "fileVersion": "1.3.1.0"
+          }
+        }
+      },
+      "PreludeLib/1.0.0.0": {
+        "runtime": {
+          "PreludeLib.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Protobuf.RunTime/1.0.0.0": {
+        "runtime": {
+          "Protobuf.RunTime.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "ReadyM.Api/1.0.506.1101": {
+        "runtime": {
+          "ReadyM.Api.dll": {
+            "assemblyVersion": "1.0.506.1101",
+            "fileVersion": "1.0.506.1101"
+          }
+        }
+      },
+      "ReadyM.Api.Multiplayer/1.0.506.1101": {
+        "runtime": {
+          "ReadyM.Api.Multiplayer.dll": {
+            "assemblyVersion": "1.0.506.1101",
+            "fileVersion": "1.0.506.1101"
+          }
+        }
+      },
+      "ReadyM.Relay.Client/1.0.506.1101": {
+        "runtime": {
+          "ReadyM.Relay.Client.dll": {
+            "assemblyVersion": "1.0.506.1101",
+            "fileVersion": "1.0.506.1101"
+          }
+        }
+      },
+      "ReadyM.Wukong.Common/1.0.506.1101": {
+        "runtime": {
+          "ReadyM.Wukong.Common.dll": {
+            "assemblyVersion": "1.0.506.1101",
+            "fileVersion": "1.0.506.1101"
+          }
+        }
+      },
+      "UnrealEngine/0.0.0.0": {
+        "runtime": {
+          "UnrealEngine.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "UnrealEngine.Runtime/1.0.0.0": {
+        "runtime": {
+          "UnrealEngine.Runtime.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "WukongMp.Api/0.0.0.0": {
+        "runtime": {
+          "WukongMp.Api.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        },
+        "resources": {
+          "de/WukongMp.Api.resources.dll": {
+            "locale": "de"
+          },
+          "es/WukongMp.Api.resources.dll": {
+            "locale": "es"
+          },
+          "fr/WukongMp.Api.resources.dll": {
+            "locale": "fr"
+          },
+          "pl/WukongMp.Api.resources.dll": {
+            "locale": "pl"
+          },
+          "pt/WukongMp.Api.resources.dll": {
+            "locale": "pt"
+          },
+          "zh-Hans/WukongMp.Api.resources.dll": {
+            "locale": "zh-Hans"
+          }
+        }
+      },
+      "WukongMp.Sdk/1.0.506.1101": {
+        "runtime": {
+          "WukongMp.Sdk.dll": {
+            "assemblyVersion": "1.0.506.1101",
+            "fileVersion": "1.0.506.1101"
+          }
+        }
+      },
+      "Friflo.Engine.ECS/3.4.2.0": {
+        "runtime": {
+          "Friflo.Engine.ECS.dll": {
+            "assemblyVersion": "3.4.2.0",
+            "fileVersion": "3.4.2.0"
+          }
+        }
+      },
+      "DryIoc/5.4.3.0": {
+        "runtime": {
+          "DryIoc.dll": {
+            "assemblyVersion": "5.4.3.0",
+            "fileVersion": "5.4.3.0"
+          }
+        }
+      },
+      "IHttpMachine/5.0.1.0": {
+        "runtime": {
+          "IHttpMachine.dll": {
+            "assemblyVersion": "5.0.1.0",
+            "fileVersion": "5.0.0.0"
+          }
+        }
+      },
+      "BouncyCastle.Cryptography/2.0.0.0": {
+        "runtime": {
+          "BouncyCastle.Cryptography.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.6.2.46322"
+          }
+        }
+      },
+      "HttpMachine/5.0.1.0": {
+        "runtime": {
+          "HttpMachine.dll": {
+            "assemblyVersion": "5.0.1.0",
+            "fileVersion": "5.0.1.0"
+          }
+        }
+      },
+      "Friflo.Json.Fliox.Annotation/1.0.4.0": {
+        "runtime": {
+          "Friflo.Json.Fliox.Annotation.dll": {
+            "assemblyVersion": "1.0.4.0",
+            "fileVersion": "1.0.4.0"
+          }
+        }
+      },
+      "Superpower/1.0.0.0": {
+        "runtime": {
+          "Superpower.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "3.1.0.0"
+          }
+        }
+      },
+      "Microsoft.Bcl.Numerics/10.0.0.0": {
+        "runtime": {
+          "Microsoft.Bcl.Numerics.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.52411"
+          }
+        }
+      },
+      "Friflo.Engine.ECS.Boost/3.4.2.0": {
+        "runtime": {
+          "Friflo.Engine.ECS.Boost.dll": {
+            "assemblyVersion": "3.4.2.0",
+            "fileVersion": "3.4.2.0"
+          }
+        }
+      },
+      "Friflo.Json.Burst/1.0.4.0": {
+        "runtime": {
+          "Friflo.Json.Burst.dll": {
+            "assemblyVersion": "1.0.4.0",
+            "fileVersion": "1.0.4.0"
+          }
+        }
+      },
+      "Nito.AsyncEx.Context/5.1.2.0": {
+        "runtime": {
+          "Nito.AsyncEx.Context.dll": {
+            "assemblyVersion": "5.1.2.0",
+            "fileVersion": "5.1.2.0"
+          }
+        }
+      },
+      "Nito.Disposables/2.2.1.0": {
+        "runtime": {
+          "Nito.Disposables.dll": {
+            "assemblyVersion": "2.2.1.0",
+            "fileVersion": "2.2.1.0"
+          }
+        }
+      },
+      "Nito.AsyncEx.Tasks/5.1.2.0": {
+        "runtime": {
+          "Nito.AsyncEx.Tasks.dll": {
+            "assemblyVersion": "5.1.2.0",
+            "fileVersion": "5.1.2.0"
+          }
+        }
+      },
+      "GSE.GSNet/1.0.0.0": {
+        "runtime": {
+          "GSE.GSNet.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "GSE.GSSdk/1.0.0.0": {
+        "runtime": {
+          "GSE.GSSdk.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "GSE.OnlineBase/1.0.0.0": {
+        "runtime": {
+          "GSE.OnlineBase.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "GUR.Runtime/1.0.0.0": {
+        "runtime": {
+          "GUR.Runtime.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Sentry/3.41.3.0": {
+        "runtime": {
+          "Sentry.dll": {
+            "assemblyVersion": "3.41.3.0",
+            "fileVersion": "3.41.3.0"
+          }
+        }
+      },
+      "Diana.Server.Common/1.0.0.0": {
+        "runtime": {
+          "Diana.Server.Common.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Diana.Common/1.0.0.0": {
+        "runtime": {
+          "Diana.Common.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "ICSharpCode.SharpZipLib/1.2.0.246": {
+        "runtime": {
+          "ICSharpCode.SharpZipLib.dll": {
+            "assemblyVersion": "1.2.0.246",
+            "fileVersion": "1.2.0.246"
+          }
+        }
+      },
+      "Friflo.Json.Fliox/1.0.4.0": {
+        "runtime": {
+          "Friflo.Json.Fliox.dll": {
+            "assemblyVersion": "1.0.4.0",
+            "fileVersion": "1.0.4.0"
+          }
+        }
+      },
+      "System.Reflection.Metadata/5.0.0.0": {
+        "runtime": {
+          "System.Reflection.Metadata.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WukongMp.PvP/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.DependencyInjection/10.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-91F/o3emPV/+xY/ip3s2LqDNF14kjttlVtq0BXgg6p4MnCzeSZxnUJm+t6WRrtD3JdGo88/oX+z7OwK4y8PZuw==",
+      "path": "microsoft.extensions.dependencyinjection/10.0.7",
+      "hashPath": "microsoft.extensions.dependencyinjection.10.0.7.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/10.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Z6mfFEaFcwCfSboxJwOLfu7/31npCY9q70WUamHW/vRQhDvBKOT4Vf9YkZj5J6hLvJpb0oDEYfHunQZj0xxvKw==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/10.0.7",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.10.0.7.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging/10.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hOeRIQ63GkgiYCB/MIFp+LQs8aXpJXpB55t6Aj37ab7t2/6WeFcPXxYM9hdy/o5tffzwf8mhqzLJP6mjGYCxjw==",
+      "path": "microsoft.extensions.logging/10.0.7",
+      "hashPath": "microsoft.extensions.logging.10.0.7.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Abstractions/10.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tIEcQ2gvERrH2KiCjdsVcHGhXt9lIsuDStfOIeZWr7/fP8IXhGiYfx0/80PNI7WPO2IYuFtlZLSlnTS8+/Mchw==",
+      "path": "microsoft.extensions.logging.abstractions/10.0.7",
+      "hashPath": "microsoft.extensions.logging.abstractions.10.0.7.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Options/10.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-00SHUGTh2jSMvIr6x9Xwd2nE+B5/qFCO/9hDwUDhJsjYRDlADmaBZ7tqehXzBDsfjHSXJzuRHJzPYPPjphBQ7Q==",
+      "path": "microsoft.extensions.options/10.0.7",
+      "hashPath": "microsoft.extensions.options.10.0.7.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Primitives/10.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-D5M0Jr551iTgwkZMN9rm0pSkgNLj5quUWQUmQPMZh7k/bnvZTnXRGfE2KuvXf1EEjt/ofD9yw9IumpgdP9QCnw==",
+      "path": "microsoft.extensions.primitives/10.0.7",
+      "hashPath": "microsoft.extensions.primitives.10.0.7.nupkg.sha512"
+    },
+    "System.ComponentModel.Annotations/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dMkqfy2el8A8/I76n2Hi1oBFEbG1SfxD2l5nhwXV3XjlnOmwxJlQbYpJH4W51odnU9sARCSAgv7S3CyAFMkpYg==",
+      "path": "system.componentmodel.annotations/5.0.0",
+      "hashPath": "system.componentmodel.annotations.5.0.0.nupkg.sha512"
+    },
+    "System.Diagnostics.DiagnosticSource/10.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Fu6AxFf9bHz/Q7DQmxKC0o+UgFes8bs2Xh+PH/x31yExRAOASTwlzjZsISTtqVU5gQshKHLZopxEBTaIyfv0wg==",
+      "path": "system.diagnostics.diagnosticsource/10.0.7",
+      "hashPath": "system.diagnostics.diagnosticsource.10.0.7.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/6.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2hBr6zdbIBTDE3EhK7NSVNdX58uTK6iHW/P/Axmm9sl1xoGSLqDvMtpecn226TNwHByFokYwJmt/aQQNlO5CRw==",
+      "path": "system.runtime.compilerservices.unsafe/6.1.2",
+      "hashPath": "system.runtime.compilerservices.unsafe.6.1.2.nupkg.sha512"
+    },
+    "0Harmony/2.4.1.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "b1.Managed/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "b1.Native/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "b1.NativePlugins/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "B1UI_GSE.Script/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BtlSvr.Main/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CSharpModBase/0.0.6.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CSharpModBaseV2/0.7.479.1129": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Google.Protobuf/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GSE.Core/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GSE.ProtobufDB/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LiteNetLib/1.3.1.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PreludeLib/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Protobuf.RunTime/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ReadyM.Api/1.0.506.1101": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ReadyM.Api.Multiplayer/1.0.506.1101": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ReadyM.Relay.Client/1.0.506.1101": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ReadyM.Wukong.Common/1.0.506.1101": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UnrealEngine/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UnrealEngine.Runtime/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WukongMp.Api/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WukongMp.Sdk/1.0.506.1101": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Friflo.Engine.ECS/3.4.2.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DryIoc/5.4.3.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IHttpMachine/5.0.1.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BouncyCastle.Cryptography/2.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HttpMachine/5.0.1.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Friflo.Json.Fliox.Annotation/1.0.4.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Superpower/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Bcl.Numerics/10.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Friflo.Engine.ECS.Boost/3.4.2.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Friflo.Json.Burst/1.0.4.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Nito.AsyncEx.Context/5.1.2.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Nito.Disposables/2.2.1.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Nito.AsyncEx.Tasks/5.1.2.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GSE.GSNet/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GSE.GSSdk/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GSE.OnlineBase/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GUR.Runtime/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Sentry/3.41.3.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Diana.Server.Common/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Diana.Common/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ICSharpCode.SharpZipLib/1.2.0.246": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Friflo.Json.Fliox/1.0.4.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Reflection.Metadata/5.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
