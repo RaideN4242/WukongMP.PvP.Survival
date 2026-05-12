@@ -1,5 +1,5 @@
 # WukongMP.PvP.Survival
-Survival Mod for WukongMP SDK
+Survival Mod for WukongMP SDK. Based on official PvP Mod by Ready Team.
 
 Wave spawn system. THIS IS DEMO!!!
 
