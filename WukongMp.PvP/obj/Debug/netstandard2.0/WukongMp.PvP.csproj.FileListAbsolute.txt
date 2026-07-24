@@ -1,0 +1,13 @@
+C:\Users\Admin\Desktop\WukongMP\mods_dev\WukongMP-PvP-mod-master\WukongMp.PvP\obj\Debug\netstandard2.0\WukongMp.PvP.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\WukongMP\mods_dev\WukongMP-PvP-mod-master\WukongMp.PvP\obj\Debug\netstandard2.0\WukongMp.PvP.Resources.PvpTexts.resources
+C:\Users\Admin\Desktop\WukongMP\mods_dev\WukongMP-PvP-mod-master\WukongMp.PvP\obj\Debug\netstandard2.0\WukongMp.PvP.Resources.PvpTexts.de.resources
+C:\Users\Admin\Desktop\WukongMP\mods_dev\WukongMP-PvP-mod-master\WukongMp.PvP\obj\Debug\netstandard2.0\WukongMp.PvP.Resources.PvpTexts.es.resources
+C:\Users\Admin\Desktop\WukongMP\mods_dev\WukongMP-PvP-mod-master\WukongMp.PvP\obj\Debug\netstandard2.0\WukongMp.PvP.Resources.PvpTexts.fr.resources
+C:\Users\Admin\Desktop\WukongMP\mods_dev\WukongMP-PvP-mod-master\WukongMp.PvP\obj\Debug\netstandard2.0\WukongMp.PvP.Resources.PvpTexts.pl.resources
+C:\Users\Admin\Desktop\WukongMP\mods_dev\WukongMP-PvP-mod-master\WukongMp.PvP\obj\Debug\netstandard2.0\WukongMp.PvP.Resources.PvpTexts.pt.resources
+C:\Users\Admin\Desktop\WukongMP\mods_dev\WukongMP-PvP-mod-master\WukongMp.PvP\obj\Debug\netstandard2.0\WukongMp.PvP.Resources.PvpTexts.zh-Hans.resources
+C:\Users\Admin\Desktop\WukongMP\mods_dev\WukongMP-PvP-mod-master\WukongMp.PvP\obj\Debug\netstandard2.0\WukongMp.PvP.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\WukongMP\mods_dev\WukongMP-PvP-mod-master\WukongMp.PvP\obj\Debug\netstandard2.0\WukongMp.PvP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\WukongMP\mods_dev\WukongMP-PvP-mod-master\WukongMp.PvP\obj\Debug\netstandard2.0\WukongMp.PvP.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\WukongMP\mods_dev\WukongMP-PvP-mod-master\WukongMp.PvP\obj\Debug\netstandard2.0\WukongMp.PvP.AssemblyInfo.cs
+C:\Users\Admin\Desktop\WukongMP\mods_dev\WukongMP-PvP-mod-master\WukongMp.PvP\obj\Debug\netstandard2.0\WukongMp.PvP.csproj.CoreCompileInputs.cache

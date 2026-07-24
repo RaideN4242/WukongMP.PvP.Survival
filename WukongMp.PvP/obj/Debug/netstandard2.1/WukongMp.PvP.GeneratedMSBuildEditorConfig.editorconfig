@@ -1,0 +1,8 @@
+is_global = true
+build_property.RootNamespace = WukongMp.PvP
+build_property.ProjectDir = C:\Users\Admin\Desktop\WukongMP\mods_dev\WukongMP-PvP-mod-master\WukongMp.PvP\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTUseWindowsUIXamlProjections = false
+build_property.EffectiveAnalysisLevelStyle = 
+build_property.EnableCodeStyleSeverity = 
