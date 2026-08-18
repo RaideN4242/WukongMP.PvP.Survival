@@ -89,7 +89,7 @@ public class PvpCommandHandler(
         {
             if (!player.IsSpectator)
             {
-                syncApi.EnableSpectatorMode(player, SpectatorReason.Observer);
+                syncApi.EnableSpectatorMode(player, SpectatorReason.Api);
             }
             else
             {
@@ -98,24 +98,24 @@ public class PvpCommandHandler(
         }
     }
 
-    private void TeleportToArena()
+    public void TeleportToArena()
     {
         if (WukongApi.Sync.LocalMainCharacter is not { } mainEntity)
             return;
 
-        if (WukongApi.Sync.InArea && !WukongApi.PvP.PvpData(mainEntity).IsSpectator && !WukongApi.PvP.InPvpTournament)
+        if (WukongApi.Sync.InArea && !mainEntity.IsSpectator && !WukongApi.PvP.InPvpTournament)
         {
             var levelData = LevelSpawnConfig.GetCurrentLevelSpawnData();
             mainEntity.Location = levelData.PvpStartingLocation.ToVector3();
         }
     }
 
-    private void TeleportToShrine()
+    public void TeleportToShrine()
     {
         if (WukongApi.Sync.LocalMainCharacter is not { } mainEntity)
             return;
 
-        if (WukongApi.Sync.InArea && !WukongApi.PvP.PvpData(mainEntity).IsSpectator && !WukongApi.PvP.InPvpTournament)
+        if (WukongApi.Sync.InArea && !mainEntity.IsSpectator && !WukongApi.PvP.InPvpTournament)
         {
             var levelData = LevelSpawnConfig.GetCurrentLevelSpawnData();
             UBGWFunctionLibraryCS.GetRebirthPointTransform(GameUtils.GetWorld(), levelData.BirthPointID, out var shrineTransform);
@@ -130,7 +130,7 @@ public class PvpCommandHandler(
         if (WukongApi.Sync.LocalMainCharacter is not { } mainEntity)
             return;
 
-        if (WukongApi.Sync.InArea && !WukongApi.PvP.PvpData(mainEntity).IsSpectator && !WukongApi.PvP.InPvpTournament)
+        if (WukongApi.Sync.InArea && !mainEntity.IsSpectator && !WukongApi.PvP.InPvpTournament)
         {
             if (pvpLevelId < 0)
             {
