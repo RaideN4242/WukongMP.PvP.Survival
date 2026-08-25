@@ -1,11 +1,13 @@
-﻿using System;
-using System.Linq;
-using System.Numerics;
-using System.Threading.Tasks;
+using CSharpModBase;
 using CSharpModBase.Input;
 using Microsoft.Extensions.Logging;
 using ReadyM.Api.DI;
 using ReadyM.Api.Idents;
+using System;
+using System.Linq;
+using System.Numerics;
+using System.Threading.Tasks;
+using UnrealEngine.Runtime;
 using WukongMp.Api;
 using WukongMp.Api.Configuration;
 using WukongMp.Api.UI;
@@ -17,7 +19,6 @@ using WukongMp.PvP.UI;
 using WukongMp.Sdk;
 using WukongMp.Sdk.Api;
 using WukongMp.Sdk.Entities;
-using UnrealEngine.Runtime;
 
 namespace WukongMp.PvP;
 
@@ -253,12 +254,16 @@ public class WaveManager
                 playerPos.Z
             );
 
-            WukongApi.Sync.SpawnEnemy(
-                kind: enemyType,
-                position: spawnPos,
-                count: 1,
-                teamId: RED_TEAM_ID
-            );
+            // !!! ГЛАВНОЕ ИЗМЕНЕНИЕ: оборачиваем в TryRunOnGameThread !!!
+            Utils.TryRunOnGameThread(() =>
+            {
+                WukongApi.Sync.SpawnEnemy(
+                    kind: enemyType,
+                    position: spawnPos,
+                    count: 1,
+                    teamId: RED_TEAM_ID
+                );
+            });
         }
         catch (Exception ex)
         {
