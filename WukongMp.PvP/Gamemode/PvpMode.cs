@@ -1,4 +1,4 @@
-﻿﻿using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -647,39 +647,40 @@ public partial class PvpMode(PvpWidgetManager pvpWidgetManager) : ClientRpcHandl
     }
 
     private void OnMonsterDead(ReadyTamer victim, ReadyCharacter? attacker)
+{
+    if (!WukongApi.PvP.InPvP)
+        return;
+
+    if (victim.Owner != WukongApi.Sync.LocalPlayerId)
+        return;
+
+    var tamerClass = victim.Tamer?.GetClass();
+    var character = victim.Pawn;
+    if (character != null && tamerClass != null && tamerClass.PathName == UnitPathUtils.GetUnitPathName(TamerKinds.DaSheng))
     {
-        if (!WukongApi.PvP.InPvP)
-            return;
+        var teamId = character.GetTeamIDInCS();
+        var location = character.GetActorLocation();
 
-        if (victim.Owner != WukongApi.Sync.LocalPlayerId)
-            return;
-
-        var tamerClass = victim.Tamer?.GetClass();
-        var character = victim.Pawn;
-        if (character != null && tamerClass != null && tamerClass.PathName == UnitPathUtils.GetUnitPathName(TamerKinds.DaSheng))
+        if (SpawnedDaSheng2.Add(victim))
         {
-            var teamId = character.GetTeamIDInCS();
-            var location = character.GetActorLocation();
-
-            if (SpawnedDaSheng2.Add(victim))
+            PendingDaShengSecondPhaseSpawns++;
+            _ = Task.Run(async () =>
             {
-                PendingDaShengSecondPhaseSpawns++;
-                _ = Task.Run(async () =>
+                await Task.Delay(5000);
+                // !!! Оборачиваем в TryRunOnGameThread !!!
+                Utils.TryRunOnGameThread(() =>
                 {
-                    await Task.Delay(5000);
-                    Utils.TryRunOnGameThread(() =>
-                    {
-                        WukongApi.Sync.SpawnEnemy(TamerKinds.DaSheng2, location.ToVector3(), 1, teamId);
-                        PendingDaShengSecondPhaseSpawns--;
-                    });
+                    WukongApi.Sync.SpawnEnemy(TamerKinds.DaSheng2, location.ToVector3(), 1, teamId);
+                    PendingDaShengSecondPhaseSpawns--;
                 });
-            }
-            else
-            {
-                Logging.LogDebug("Would spawn DaSheng2, but already spawned for this monster: {Monster}", victim.Guid);
-            }
+            });
+        }
+        else
+        {
+            Logging.LogDebug("Would spawn DaSheng2, but already spawned for this monster: {Monster}", victim.Guid);
         }
     }
+}
 
     private static void ResetPlayer(ReadyMainCharacter mainCharacter)
     {
