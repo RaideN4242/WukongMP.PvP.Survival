@@ -12,3 +12,9 @@ Discussion here: https://discord.com/channels/1278355057330618533/14959078450093
 For launch req WukongMp.Sdk (without official PVP Mod!)
 
 https://youtu.be/qzGbfrLI-V8?feature=shared
+
+<img width="1842" height="1026" alt="2358720_screenshots_20260508221047_1" src="https://github.com/user-attachments/assets/5621221a-ee16-4b83-965b-7a3fc38e37d6" />
+
+
+
+<img width="1842" height="1026" alt="2358720_screenshots_20260508174350_1" src="https://github.com/user-attachments/assets/8865a6be-edb4-494d-ae4f-38d2ecbbd93f" />
